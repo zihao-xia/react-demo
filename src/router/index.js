@@ -1,8 +1,8 @@
 import Login from '@/pages/Login'
 import Article from '@/pages/Article'
 import Layout from '@/pages/Layout'
-import Board from '@/pages/Board'
-import About from '@/pages/About'
+import Home from '../pages/Home'
+import Publish from '../pages/Publish'
 import NotFound from '@/pages/NotFound'
 
 import { createBrowserRouter } from 'react-router-dom'
@@ -14,12 +14,16 @@ const router = createBrowserRouter([
     element: <AuthRoute><Layout /></AuthRoute>,
     children: [
       {
-        index: true,
-        element: <Board />
+        path: 'home',
+        element: <Home />
       },
       {
-        path: 'about',
-        element: <About />
+        path: 'article',
+        element: <Article />
+      },
+      {
+        path: 'publish',
+        element: <Publish />
       }
     ]
   },

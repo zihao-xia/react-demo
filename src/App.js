@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import './index.css'
+import './index.scss'
 import { useDispatch, useSelector } from "react-redux"
 import { decrement, increment, addToNum } from "./store/modules/counterStore"
 import { fetchChannelList } from "./store/modules/channelStore"
