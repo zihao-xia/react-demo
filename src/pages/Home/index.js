@@ -1,5 +1,12 @@
+import BarChart from "./components/BarChart"
+
 const Home = () => {
-  return <div>Home</div>
+  return (
+    <div>
+      <BarChart title={'framework difficulty'} />
+      <BarChart title={'framework usage'} />
+    </div>
+  )
 }
 
 export default Home

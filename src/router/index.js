@@ -1,8 +1,8 @@
 import Login from '@/pages/Login'
 import Article from '@/pages/Article'
 import Layout from '@/pages/Layout'
-import Home from '../pages/Home'
-import Publish from '../pages/Publish'
+import Home from '@/pages/Home'
+import Publish from '@/pages/Publish'
 import NotFound from '@/pages/NotFound'
 
 import { createBrowserRouter } from 'react-router-dom'
@@ -14,7 +14,7 @@ const router = createBrowserRouter([
     element: <AuthRoute><Layout /></AuthRoute>,
     children: [
       {
-        path: 'home',
+        index: true,
         element: <Home />
       },
       {
